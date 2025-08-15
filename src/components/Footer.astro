@@ -4,7 +4,7 @@ const today = new Date();
 
 <footer>
     &copy; {today.getFullYear()} Berens von Rautenfeld family -  all rights reserved. 
-    <a href="/impressum">Impressum</a>
+    <a href="/impressum" class="custom-link">Impressum</a>
     <div class="social-links">
         <a href="https://m.webtoo.ls/@astro" target="_blank">
             <span class="sr-only">Follow Astro on Mastodon</span>
@@ -60,5 +60,14 @@ const today = new Date();
     .social-links a:hover {
         color: rgb(var(--gray-dark));
     }
- 
+    
+    .custom-link {
+        color: rgb(var(--gray));
+        text-decoration: underline;
+    }
+    .custom-link:hover {
+        color: rgb(var(--gray-dark));
+    }
+
+
 </style>
